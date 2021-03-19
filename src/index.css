@@ -5,9 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 10px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    background: #b8b8b8;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 790px;
+  height: 250px;
+  overflow: hidden;
+
+}
+.slider-line {
+  display: flex;
+  position: relative;
+  column-gap: 10px;
+  transition: 0.8s;
+}
+
+.slider-line div{
+  flex-shrink: 0;
+}
+
+.btn {
+  height: 50px;
+  margin: 10px;
+  background: #ffffff;
+  border: none;
+  font-weight: bold;
 }
